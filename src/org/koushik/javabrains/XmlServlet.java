@@ -26,7 +26,6 @@ public class XmlServlet extends HttpServlet {
 		out.println("hello from the POST method "+username+"! \n We know that your full name is "+fullname);
 		String prof = req.getParameter("prof");
 		out.println("You 're a "+prof);
-		//String location = req.getParameter("location");
 		String[] location = req.getParameterValues("location");
 		out.println("You 're at "+location.length+" places");
 		for (String str : location)
